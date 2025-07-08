@@ -1,0 +1,6 @@
+name: MI-1
+version: '${project.version}'
+main: ru.quizie.mi1.MI_1
+api-version: '1.16'
+commands:
+  givepickaxe: {}

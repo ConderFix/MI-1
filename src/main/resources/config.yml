@@ -1,0 +1,6 @@
+pickaxe:
+  material: DIAMOND_PICKAXE
+  display-name: "Pickaxe"
+  lore:
+    - "UwU"
+  glow: true
