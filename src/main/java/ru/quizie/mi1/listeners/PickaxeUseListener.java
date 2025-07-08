@@ -21,7 +21,7 @@ public class PickaxeUseListener implements Listener {
         if (event.getAction() != Action.RIGHT_CLICK_BLOCK) return;
 
         final ItemStack stack = event.getItem();
-        if (stack.getType().isAir() || stack.getItemMeta() == null || stack.getItemMeta().getPersistentDataContainer().has(MI_1.PICKAXE_KEY, PersistentDataType.BYTE)) return;
+        if (stack == null || stack.getType().isAir() || stack.getItemMeta() == null || stack.getItemMeta().getPersistentDataContainer().has(MI_1.PICKAXE_KEY, PersistentDataType.BYTE)) return;
 
         final Block block = event.getClickedBlock();
         if (block.getType().isAir() || block.getType() != Material.BEDROCK) return;
